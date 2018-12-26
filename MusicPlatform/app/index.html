@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+	<script src="./app.js"></script>
+	<title>Music Platform</title>
+</head>
+<body>
+	<h1>Music Platform</h1>
+	<div id="result"> Result: <input id="screen"></div>
+	<div id="left">
+		<div id="create">
+			<div>Name <input id="name"></div>
+			<div>Singer <input id="singer"></div>
+			<div>Price <input id="price"></div>
+			<button id="createBtn" onclick="App.createMusic()">Create</button>
+		</div>
+
+		<div id="queryPrice">
+			<div>Song Name <input id="queryPriceName"></div>
+			<button id="queryBtn" onclick="App.queryPrice()">Query</button>
+		</div>
+	</div>
+
+    <div id="right">
+		<div id="buyMusic">
+			<div>Account <input id="account"></div>
+			<div>Name <input id="songName"></div>
+			<div>Value <input id="value"></div>
+			<button id="buyBtn" onclick="App.buyMusic()">Buy</button>
+		</div>
+
+		<div>Account <input id="account2"></div>
+		<button id="withBtn" onclick="App.withdraw()">Withdraw</button><!--
+        --><button id="balanceBtn" onclick="App.getBalance()">Balance</button>
+
+		<button id="getCountBtn" onclick="App.getCount()">MusicCount</button><!--
+	    --><button id="getListBtn" onclick="App.getMusicList()">MusicList</button>
+
+	    <button id="getMyListBtn" onclick="App.getMyMusicList()">MyMusicList</button>
+	</div>
+
+</body>
+</html>
